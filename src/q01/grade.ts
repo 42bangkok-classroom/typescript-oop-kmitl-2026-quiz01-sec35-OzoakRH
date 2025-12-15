@@ -4,7 +4,7 @@ function calculateGrade(input: string | undefined): void {
     if (input === undefined) {
         console.log(INVALID_INPUT_MESSAGE);
         return;
-
+        
     }
     const score: number = parseFloat(input);
     if (isNaN(score)) {
