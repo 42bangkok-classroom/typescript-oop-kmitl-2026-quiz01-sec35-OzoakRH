@@ -3,11 +3,11 @@ const INVALID_INPUT_MESSAGE = "Invalid Input";
 const balanceString: string | undefined = process.argv[2];
 const withdrawalString: string | undefined = process.argv[3];
 
-
+/**
 @param balStr
 @param wthdrwStr
 @returns
-
+ */
 function processWithdrawal(balStr: string | undefined, wthdrwStr: string | undefined): string {
     if (balStr === undefined || wthdrwStr === undefined) {
         return INVALID_INPUT_MESSAGE;

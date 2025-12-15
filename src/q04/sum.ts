@@ -14,7 +14,7 @@ function calculateSumToN(nStr: string | undefined): void {
 
     const N: number = parseFloat(nStr);
 
-    if (isNaN(N) || N < 0) {
+    if (isNaN(N) || N <= 0) {
         console.log(INVALID_INPUT_MESSAGE);
         return;
     }
